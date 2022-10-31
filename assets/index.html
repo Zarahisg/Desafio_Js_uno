@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="customs.css">
+    <title>CarcasasPersonalizadas</title>
+</head>
+<body>
+  <main>
+    <div class="card bg-success" style="width: 18rem;">
+        <img src="/assets/img/producto.png" 
+        class="card-img-top" 
+        alt="Carcasas">
+        <div class="card-body">
+          <h1 class="card-title text-center">Carcasas Personalizadas</h1>
+          <input
+          id="amount"
+          type="number"
+          placeholder="Cantidad"
+          class="mb-2 w-100 border"
+        />
+        <select
+          name="listaColores"
+          id="listaColores"
+          onchange="cambiaColor(this)"
+          class="w-100 border"
+        >
+          <option value="#FFFFFF">Blanco</option>
+          <option value="#000000">Negro</option>
+          <option value="#F73B20">Rojo</option>
+          <option value="#013CF7">Azul</option>
+          <option value="#23AB29">Verde</option>
+          <option value="#e91e63">Rosado</option>
+        </select>
+        <p id="price" class="card-text text-center h2">Precio: $10.000</p>
+        <a id="btn" href="#" class="btn btn-dark">Calculo Total</a>
+    </div>
+    <div class="ps-5">
+      <h3 id="priceTotal">Total: $0</h3>
+      <h3 id="amountTotal">Cantidad: 0</h3>
+      <h3>Color: <button id="buttomTotal" class="circle"></button></h3>
+        </div>
+      </div>
+    </main>
+    
+<script src="/assets/primer.js"></script>
+</body>
+</html>
